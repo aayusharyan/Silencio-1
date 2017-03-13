@@ -10,4 +10,8 @@
 
     <string name="action_settings">Settings</string>
     <string name="title_activity_show_feedback">ShowFeedback</string>
+    <string name="enterflightno">Enter Flight Number :</string>
+    <string name="flightno">eg.SU254</string>
+    <string name="gonoiceless">GO-Noiseless</string>
+    <string name="cancle">Cancel</string>
 </resources>
