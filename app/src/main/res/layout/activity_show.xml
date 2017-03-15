@@ -5,21 +5,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:background="#eef3f7"
+
 
 
     android:layout_height="match_parent"
     tools:context=".ShowActivity.ShowActivity">
 
     <include layout="@layout/boarding_pass"
+             android:visibility="gone"
              android:id="@+id/cardBoarding"/>
     <FrameLayout
         android:id="@+id/main_container"
         android:layout_below="@+id/cardBoarding"
-        android:layout_marginTop="5dp"
-        android:paddingRight="8dp"
-        android:paddingLeft="8dp"
-        android:paddingTop="8dp"
+
+
+
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/bottom_navigation"
