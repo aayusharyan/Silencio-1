@@ -3,21 +3,300 @@
 
     <item
         is-multidex="true"
-        jar="/Users/himanshusingh/Documents/Silencio/Silencio/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/vaibhav/.android/build-cache/92515efd29d046d5c6c05c147d8598182351dae8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cf8c0b6ec17f059cf61ecd101296e16c38562196">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7068508a9c6dc06203a81f8e357aaa1148461c42/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/173e2d922c3cde7b0ca229922651ce98127dd24e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b831d3902674d096189451d46fce219e2c2904b7">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9409ed716491c86b9bb55aa114a9a9fec0ec382d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d8b0c070a4dfdb25e4b37c89bd4d8e596dadbdc">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_23799304070fbe54fb74e9bbd06ce1fa117c82ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/bd1bed3ea59a9e3fda25cd6c0ff21ace489b9478/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c6047a34af07d6ec4e950ba1dc70ce23ac65ecaa">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9f7bbbc8429454d7b6f54ffaaa07641f5534a0b0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.2/43eeae0b9fb087bb3194ba59ab63a38a32fbf3e/retrofit-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.2_e188cbfd3e68e420a5cf326577b1fdd3170784c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_b51dff96594260c96d4f8469984c9107d1cf66b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.2.0/f7873a2ebde246a45c2a8d6f3247108b4c88a879/okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.2.0_e0cc2852a0ca467d28c4535cf9f880914877733f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.1/constraint-layout-solver-1.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ad79631209e77b0a2730fc112b4cc0c66a95132">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.1_0aae935f8f9afe37d90ad1a70bca2033e478e25d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_16185de17e064f58a7bd69a42495c4769e8c5c0b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/cb62a1fb63c0783946f70b84cb2f55ab4ffac779/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="343ad59d9fb3bbf6ab99baafad859eb4b0fecc02">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_59fa9aa5ddad317b614321bb5e1b4f9016715124/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/27650f1232ac55e2fc01f00d544e629e8f78aa18/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a319fd4d548ba4cc9511561d37109ba922bfbf6a">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6418606a6f005763d4045c6d5d9b032d06e72d71/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/6a41932380406406c68fa7e279b013ad10f2cd3e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf0c341964d642285112a874e45cb80a94e44c71">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_43877f9c0b276c17d8f789049691de4a8efdeec7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/429c2560faaf7e7c7ebdb891008308fe076eec0d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1395232a7eddc612029353b3c953cb0fced71076">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3610d6d270f24990872bfb4db34cb10eb05c758e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/ae77daebed672b05c60fe20d6e2c899e8840bf7f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e54cd49021feff9568a744b7d20ddbb9a94dbe42/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/116486d0f68b62f02ca1581a8ab1f53f7a7ffcdc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7be042dd2aa8157a2b63934902f472952d2ea1fe">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dc1369825d34c112e47b94a314834f784b39d7e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/fc23af1efcbeaca66f2dc79c62569184b34ac5a1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b8c17ff2e9329f9710011117d25655598dffb92c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_28afac086302b13a6825ed09068174f56dc754bd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/6f74aed2898b35767049a6675bf5ef6f70bbce42/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="48532a016bb0dfbe7970c147ce784598a515406b">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_11fa814bce7eef19aa9a278c7c25d3a62357251c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.twitter/twitter-text/1.13.0/78415b95ae3184c5926d593feab64bfc0b73b2dd/twitter-text-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="78415b95ae3184c5926d593feab64bfc0b73b2dd">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/twitter-text-1.13.0_d1b4e804d86e61aa1e7cb12f2ed461a4dc3cba3d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.1/b9d63507329a7178e026fc334f87587ee5070ac5/gson-2.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9d63507329a7178e026fc334f87587ee5070ac5">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.1_718eda28fc9c7777c32f20eca5dbe150a6e05730/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_2781ec92ab7a105e5543cb0c9b274f921a67bec7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/24faff579e9a7f29b268621c5c4751d5ac11ad04/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="895c63ba9782b04f0c5da69205216f6ec87119eb">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a4bdb8801595765b4b925637171f8071eda288ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/d5d6af4de72ddea9ac4a6f468a62bfeb45c92c16/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0558e5b6c171bd6719581340f9ac6be4af5ae265">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_41fb94b5ed17e2224b4a9be8432fedc9ff876754/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/12be077a767b5a24d19ee3f2e48cf0b2e2460bc7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f5bcd9cbfeedc58f493339841a7c5d0347a39f0b">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a9b4e4c1f6729765f28538145900e73e4e831d63/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_96fabf768bc00bab7da16961e697ae8c448fbda1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/7385618a8b5055b853519e0b74f3be896cc05d7a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a10ed1f1cff990ef081263ad33f13dc6c207eb4e">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0aacc7f1c3f3a2026fa3fba48c6f1706004098e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/himanshusingh/Documents/Silencio/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9ae8cefca7550a2643c83beba6f8810ffc992777/classes.dex" />
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_3540bf3071bfc078b7b3170e57b413307218a622/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/himanshusingh/Documents/Silencio/Silencio/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/home/vaibhav/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.2/f8d87f15b94b8d74e7ccf61d7eedb558811cdb30/converter-gson-2.0.2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="64bcf094a29a67d905507bfa32bdecc6b2491082">
-        <dex dex="/Users/himanshusingh/Documents/Silencio/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_a44a7b70d42d5aec8fef004eb6814be403563445/classes.dex" />
+        sha1="f8d87f15b94b8d74e7ccf61d7eedb558811cdb30">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.2_5284863144f64f290e49a2bdf6bd3f330fe4899e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/b8b0554445b22a5b499634201ea282fa1fa3bf98/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9d5ae39b0de30b0f73c815513024feff3542f36e">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a96e60180d08a8baf07bc6e342ad53476d1f421c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/78b6e8eec0571cf1ef3960fe8025b801d830cbb3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7308fa2037dac339ea04b90cdd17e87f835ea294">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4f5b67decf9b9596a1756a46d8129da4f41d1f68/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/3952215972dc51c4fea15c60eb271465be113255/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8bdf5cd702d3d860cd85783a776c26605f557882">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0ba2f1c8b07bd14df20283c54fc51e36833fef0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/0487c528c0519091f299cc4e18597c1cd476b2e3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7113302c965566b66df46c6ca75ea301576114a5">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8f949130938638a7e8ea7c9b8c38f148c7fba0aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vaibhav/.android/build-cache/9e0074919ded9e5706403b4002752d490f16a7bf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
+        <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e30edfa8819cc4ce066068d608106208ccc50c13/classes.dex" />
     </item>
 
 </items>
