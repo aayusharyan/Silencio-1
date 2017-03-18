@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "641051609903-0psprjdmhcm7i8r4q1kkplpvrmkr0nt4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamshunya.silencio",
+            "certificate_hash": "9536c670089549a4d0d1df773bd1824e4575af21"
+          }
+        },
+        {
           "client_id": "641051609903-f4ut5atgq18083o3oc3a0vkgtb89hckh.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -22,6 +30,9 @@
       "api_key": [
         {
           "current_key": "AIzaSyAj6DIGLZSCnBsLqDhDBZHIrzftuTJtECM"
+        },
+        {
+          "current_key": "AIzaSyCIKaA_FWJwPFhIRTW9ORjn9XyL4fcXdFo"
         }
       ],
       "services": {
