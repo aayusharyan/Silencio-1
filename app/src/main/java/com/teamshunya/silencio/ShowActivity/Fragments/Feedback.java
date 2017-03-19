@@ -20,7 +20,7 @@ import com.teamshunya.silencio.R;
 public class Feedback extends android.support.v4.app.Fragment {
     SmileRating smileRating0, smileRating1, smileRating2, smileRating3, smileRating4, smileRating5, smileRating6, smileRating7, smileRating8;
     Button submitButton;
-    int rate0 = 3, rate1 = 3, rate2 = 3, rate3 = 3, rate4 = 3, rate5 = 3, rate6 = 3, rate7 = 3, rate8 = 3;
+    int rate0, rate1, rate2, rate3, rate4, rate5, rate6, rate7, rate8;
     //default value will be 3 ...as it is already selected in UI
     //we need defalut values bcz onSmylieselctionlistener will not execute if user directly clicks on submit without clicking on any of the feedback
     EditText textFeedback;
@@ -34,6 +34,7 @@ public class Feedback extends android.support.v4.app.Fragment {
 
 
     private void bindViews(View rootLayout) {
+        rate0=rate1=rate2=rate3=rate4=rate5=rate6=rate7=rate8 =3;
         if (user != null) {
 
             userid = user.getUid();//we'll take the userid from auth and will store the feddback for that uid only
@@ -47,7 +48,6 @@ public class Feedback extends android.support.v4.app.Fragment {
             smileRating6 = (SmileRating) rootLayout.findViewById(R.id.smile_rating6);
             smileRating7 = (SmileRating) rootLayout.findViewById(R.id.smile_rating7);
             smileRating8 = (SmileRating) rootLayout.findViewById(R.id.smile_rating8);
-
 
             submitButton = (Button) rootLayout.findViewById(R.id.submitButoon);
             textFeedback = (EditText) rootLayout.findViewById(R.id.textFeedbackFromUser);
@@ -122,7 +122,6 @@ public class Feedback extends android.support.v4.app.Fragment {
                 }
             });
 
-
             submitButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -133,7 +132,7 @@ public class Feedback extends android.support.v4.app.Fragment {
                     DatabaseReference database = FirebaseDatabase.getInstance().getReference().child("Feddback").child(userid);
                     //here we can ad the condition to chek that already the feedback of that user(means userid) is exist or not nd will move accordingly
 
-                    database.child("Airport_hospitality").setValue(rate0);
+                    database.child("Airport hospitality").setValue(rate0);
                     database.child("Airport Ambience").setValue(rate1);
                     database.child("Airport cleanliness").setValue(rate2);
                     database.child("Transport").setValue(rate3);
@@ -146,15 +145,13 @@ public class Feedback extends android.support.v4.app.Fragment {
                     if (textFeddbackToFirebase != null) {
                         database.child("other").setValue(textFeddbackToFirebase);
                     }
+                    database.keepSynced(true);
                 }
             });
-
-
         } else {
             // if userid dosent exist we'll not show the feeedback
             //dont kn how to do -vaibhav
         }
-
     }
 
     @Override
@@ -166,9 +163,5 @@ public class Feedback extends android.support.v4.app.Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         bindViews(view);
-
-
     }
-
-
 }

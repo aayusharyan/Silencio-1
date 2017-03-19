@@ -19,4 +19,6 @@
     <string name="eat">Eating Area</string>
     <string name="Baggage">Baggage Claim</string>
     <string name="nav">Navigation Ease</string>
+    <string name="clean">Airport Cleanliness</string>
+    <string name="hospitality">Airport Hospitality</string>
 </resources>

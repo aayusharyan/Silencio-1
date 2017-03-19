@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ad6fbcdc90be5178f57c217d8539e78ac3d4dbe8">
+        sha1="282d13fdea3bf2008e3e6f4e10c8a9d5f6133237">
         <dex dex="/home/vaibhav/AndroidStudioProjects/myApp/Silencio/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_23799304070fbe54fb74e9bbd06ce1fa117c82ac/classes.dex" />
     </item>
 
