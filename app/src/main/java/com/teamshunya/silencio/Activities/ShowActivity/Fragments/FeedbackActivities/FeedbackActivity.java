@@ -9,9 +9,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.hsalf.smilerating.SmileRating;
 import com.teamshunya.silencio.Classes.StoreSession;
 import com.teamshunya.silencio.R;
@@ -156,27 +160,43 @@ public class FeedbackActivity extends AppCompatActivity implements AdapterView.O
                         break;
                 }
 
-                DatabaseReference database = FirebaseDatabase.getInstance().getReference().child("Feedback").child(StoreSession.getInstance().readPreferencesString("PNR", ""));
-                database.child("emailID").setValue(emailidValue);
-                database.child("NAME").setValue(nameValue);
-                database.child("Age").setValue(ageValue);
-                database.child("Number").setValue(numberValue);
-                database.child("FlightNo").setValue(flight_noValue);
-                database.child("RadioValue").setValue(finalRadioValue);
+                final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("Feedback");
+                final DatabaseReference database = FirebaseDatabase.getInstance().getReference().child("Feedback").child(StoreSession.getInstance().readPreferencesString("PNR", ""));
+             databaseReference.addValueEventListener(new ValueEventListener() {
+                 @Override
+                 public void onDataChange(DataSnapshot dataSnapshot) {
+                     if (!dataSnapshot.hasChild(StoreSession.getInstance().readPreferencesString("PNR", ""))){
+                         database.child("emailID").setValue(emailidValue);
+                         database.child("NAME").setValue(nameValue);
+                         database.child("Age").setValue(ageValue);
+                         database.child("Number").setValue(numberValue);
+                         database.child("FlightNo").setValue(flight_noValue);
+                         database.child("RadioValue").setValue(finalRadioValue);
+                         database.child("ground").setValue(groundRate);
+                         database.child("park").setValue(parkkrate);
+                         database.child("bag").setValue(bagrate);
+                         database.child("courtsy").setValue(courtsyrate);
+                         database.child("waittime").setValue(waitrate);
+                         database.child("courtsyINSEP").setValue(cortsyInseprate);
+                         database.child("ease").setValue(easerate);
+                         database.child("eat").setValue(eatrate);
+                         database.child("airport staff").setValue(airportstaffrate);
+                         database.child("satisfaction").setValue(satisrate);
+                         database.child("shop").setValue(shorate);
+                         database.child("clean").setValue(cleanrate);
+                         database.child("avail").setValue(avalrate);
+                     }
+                     else {
+                         Toast.makeText(FeedbackActivity.this,"You have already submitted your Feedback,Thank you",Toast.LENGTH_SHORT).show();
+                     }
+                 }
 
-                database.child("ground").setValue(groundRate);
-                database.child("park").setValue(parkkrate);
-                database.child("bag").setValue(bagrate);
-                database.child("courtsy").setValue(courtsyrate);
-                database.child("waittime").setValue(waitrate);
-                database.child("courtsyINSEP").setValue(cortsyInseprate);
-                database.child("ease").setValue(easerate);
-                database.child("eat").setValue(eatrate);
-                database.child("airport staff").setValue(airportstaffrate);
-                database.child("satisfaction").setValue(satisrate);
-                database.child("shop").setValue(shorate);
-                database.child("clean").setValue(cleanrate);
-                database.child("avail").setValue(avalrate);
+                 @Override
+                 public void onCancelled(DatabaseError databaseError) {
+
+                 }
+             });
+
             }
         });
     }

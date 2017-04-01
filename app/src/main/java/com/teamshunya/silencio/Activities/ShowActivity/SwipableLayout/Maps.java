@@ -31,8 +31,8 @@ import com.teamshunya.silencio.R;
 
 import java.util.Map;
 
-public class Maps extends Fragment implements OnMapReadyCallback,GoogleApiClient.ConnectionCallbacks,
-        GoogleApiClient.OnConnectionFailedListener{
+public class Maps extends Fragment implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks,
+        GoogleApiClient.OnConnectionFailedListener {
     GoogleMap mGoogleMap;
     private static final long GEO_DURATION = 60 * 60 * 1000;
     private static final String GEOFENCE_REQ_ID = "My Geofence";
@@ -43,9 +43,8 @@ public class Maps extends Fragment implements OnMapReadyCallback,GoogleApiClient
     View mView;
     private GoogleApiClient googleApiClient;
     GPSTracker gps;
-    double latitude,longitude;
-    double lat = 12.9218780;
-    double llong =77.6200830;
+    double latitude, longitude;
+
     public Maps() {
         // Required empty public constructor
     }
@@ -55,22 +54,24 @@ public class Maps extends Fragment implements OnMapReadyCallback,GoogleApiClient
         super.onCreate(savedInstanceState);
         createGoogleApi();
         gps = new GPSTracker(getContext());
-        if(gps.canGetLocation()){
+        if (gps.canGetLocation()) {
             latitude = gps.getLatitude();
-            longitude = gps.getLongitude();}
+            longitude = gps.getLongitude();
+        }
 
     }
 
     private void createGoogleApi() {
         Log.d("Name", "createGoogleApi()");
-        if ( googleApiClient == null ) {
+        if (googleApiClient == null) {
             googleApiClient = new GoogleApiClient.Builder(getContext().getApplicationContext())
-                    .addConnectionCallbacks( this )
-                    .addOnConnectionFailedListener( this )
-                    .addApi( LocationServices.API )
+                    .addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this)
+                    .addApi(LocationServices.API)
                     .build();
         }
     }
+
     @Override
     public void onStart() {
         super.onStart();
@@ -86,11 +87,12 @@ public class Maps extends Fragment implements OnMapReadyCallback,GoogleApiClient
         // Disconnect GoogleApiClient when stopping Activity
         googleApiClient.disconnect();
     }
+
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mMapView = (MapView)mView.findViewById(R.id.map);
-        if (mMapView!=null){
+        mMapView = (MapView) mView.findViewById(R.id.map);
+        if (mMapView != null) {
             mMapView.onCreate(null);
             mMapView.onResume();
             mMapView.getMapAsync(this);
@@ -101,7 +103,7 @@ public class Maps extends Fragment implements OnMapReadyCallback,GoogleApiClient
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        mView= inflater.inflate(R.layout.fragment_maps, container, false);
+        mView = inflater.inflate(R.layout.fragment_maps, container, false);
         return mView;
     }
 
@@ -111,8 +113,8 @@ public class Maps extends Fragment implements OnMapReadyCallback,GoogleApiClient
         mGoogleMap = googleMap;
         googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
         MarkerOptions newMarker = new MarkerOptions();
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(latitude,longitude)).title("You are here").snippet("Enjoy your day"));
-        CameraPosition Liberty = CameraPosition.builder().target(new LatLng(latitude,longitude)).zoom(16).bearing(0).tilt(20).build();
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(latitude, longitude)).title("You are here").snippet("Enjoy your day"));
+        CameraPosition Liberty = CameraPosition.builder().target(new LatLng(latitude, longitude)).zoom(16).bearing(0).tilt(20).build();
         googleMap.moveCamera(CameraUpdateFactory.newCameraPosition(Liberty));
 
         googleMap.addCircle(new CircleOptions()
@@ -125,23 +127,25 @@ public class Maps extends Fragment implements OnMapReadyCallback,GoogleApiClient
     }
 
     // Create a Geofence
-    private Geofence createGeofence(LatLng latLng, float radius ) {
+    private Geofence createGeofence(LatLng latLng, float radius) {
         Log.d("Maps", "createGeofence");
         return new Geofence.Builder()
                 .setRequestId(GEOFENCE_REQ_ID)
-                .setCircularRegion( latLng.latitude, latLng.longitude, radius)
-                .setExpirationDuration( GEO_DURATION )
-                .setTransitionTypes( Geofence.GEOFENCE_TRANSITION_ENTER
-                        | Geofence.GEOFENCE_TRANSITION_EXIT )
+                .setCircularRegion(latLng.latitude, latLng.longitude, radius)
+                .setExpirationDuration(GEO_DURATION)
+                .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_ENTER
+                        | Geofence.GEOFENCE_TRANSITION_EXIT)
                 .build();
     }
-    private GeofencingRequest createGeofenceRequest(Geofence geofence ) {
+
+    private GeofencingRequest createGeofenceRequest(Geofence geofence) {
         Log.d("Maps", "createGeofenceRequest");
         return new GeofencingRequest.Builder()
-                .setInitialTrigger( GeofencingRequest.INITIAL_TRIGGER_ENTER )
-                .addGeofence( geofence )
+                .setInitialTrigger(GeofencingRequest.INITIAL_TRIGGER_ENTER)
+                .addGeofence(geofence)
                 .build();
     }
+
     @Override
     public void onConnected(@Nullable Bundle bundle) {
 
@@ -158,14 +162,12 @@ public class Maps extends Fragment implements OnMapReadyCallback,GoogleApiClient
     }
 
 
-
     public void onMarkerDragStart(Marker marker) {
     }
 
 
     public void onMarkerDrag(Marker marker) {
     }
-
 
 
     public void onMarkerDragEnd(Marker marker) {
